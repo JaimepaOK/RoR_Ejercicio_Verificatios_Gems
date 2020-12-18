@@ -1,0 +1,43 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong><%= t('Motor') %>:</strong>
+  <%= @vehiculo.motor %>
+</p>
+
+<p>
+  <strong><%= t('Brand') %>:</strong>
+  <%= @vehiculo.marca %>
+</p>
+
+<p>
+  <strong><%= t('Model') %>:</strong>
+  <%= @vehiculo.modelo %>
+</p>
+
+<p>
+  <strong><%= t('N_of_p') %>:</strong>
+  <%= @vehiculo.cantpasj %>
+</p>
+
+<p>
+  <strong><%= t('Y_of_p') %>:</strong>
+  <%= @vehiculo.anyofabric %>
+</p>
+
+<p>
+  <strong><%= t('Foto') %>:</strong>
+  <%= @vehiculo.foto %>
+</p>
+
+<p>
+  <strong><%= t('Cylinder') %>:</strong>
+  <%= @vehiculo.cilindraje %>
+</p>
+<p>
+  <strong><%= t('Color') %>:</strong>
+  <%= @vehiculo.color %>
+</p>
+
+<%= link_to t('Edit'), edit_vehiculo_path(@vehiculo) %> |
+<%= link_to t('Back'), vehiculos_path %>

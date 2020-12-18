@@ -1,0 +1,93 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  Hello: "Hello"
+  Show: "Show"
+  Edit: "Edit"
+  Destroy: "Destroy"
+  Back: "Back"
+  New Vehiculo: "New Car" 
+  Are You Sure?: "Are You Sure?" 
+  Search: "Search"
+  Motor: "Motor"
+  Brand: "Brand"
+  Model: "Model"
+  N_of_p: "Number of Passagers"
+  Y_of_p: "Year of Production"
+  Foto: "Foto"
+  Cylinder: "Cylinder Capaty"
+  Vehicule_s: "Vehicule's"
+  Color: "Color"
+  Vehicule: "Vehicule"
+  Home: "Home"
+  About: "About"
+  Help: "Help"
+  Bye: "Bye"
+  ListV: "List of Vehicules"
+  User: "User"
+  Log_out: "Log Out"
+  Log_in: "Log in"
+  Sign_in: "Sign In"
+  Sign_up: "Sign Up"
+  Welcomeindex: "Welcome to Index"
+  Gsearch: "Google Search"
+  Findmein: "Find me in"
+  Helpindex: "Help Index"
+  Welcome: "Welcome!"
+  conf_acount_below: "You can confirm your account email through the link below:"
+  Mail_contac_being_change: "We're contacting you to notify you that your email is being changed to "
+  Mail_contac_hasbeen_change: "We're contacting you to notify you that your email has been changed to"
+  r_c_i: "Resend confirmation instructions"
+  Mail_contac_pass_change: "We're contacting you to notify you that your password has been changed."
+  reques_link_below: "Someone has requested a link to change your password. You can do this through the link below."
+  pass_wont_change: "Your password won't change until you access the link above and create a new one."
+  didnot_request: "If you didn't request this, please ignore this email."
+  acount_lock: "Your account has been locked due to an excessive number of unsuccessful sign in attempts."
+  unlock_below: "lick the link below to unlock your account:"
+  new_password: "New Password"
+  confirm_password: "Confirm new password"
+  change_password: "Change the password"
+  send_reset: "Send me reset password instructions"
+  Current_waiting_conf: "Currently waiting confirmation for:"
+  current_password: "Current Password"
+  update: "Update"
+  cancel_my_a: "Cancel my account"
+  change_form: "Change your password"
+  forgo_pass_form: "Forgot your password?"
+  password: "Password"
+  remember_me: "Remember Me"
+  didnot_recive_inst: "You have not received the confirmation instructions?"
+  didnot_recive_unlock: "You have not received the instructions to unlock your account?"
+  sing_in_with: "Login with: "
+  resent_unlock: "Resend instructions to unlock account"
+  confirm_acount: "Confirm my account"
+  avanzed_sh: "Advanzed Search"

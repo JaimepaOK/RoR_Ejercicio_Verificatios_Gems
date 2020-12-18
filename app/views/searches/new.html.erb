@@ -1,0 +1,21 @@
+<h1>Advanced Search</h1>
+
+
+<p><%= link_to "Back", vehiculos_path %></p>
+
+
+<%= search_form_for @search do |f| %>
+  <%= f.grouping_fields(f.object.new_grouping) do |g| %>
+    <%= g.condition_fields(g.object.new_condition) do |c| %>
+      <%= c.attribute_fields do |a| %>
+        <%= a.attribute_select only: %i(id) %>
+      <% end %>
+      <%= c.predicate_select only: %i(cont not_eq eq) %>
+      <%= c.value_fields do |v| %>
+        <%= v.text_field :value %>
+      <% end %>
+    <% end %>
+  <% end %>
+  <%= f.submit "filter" %>
+<% end %>
+

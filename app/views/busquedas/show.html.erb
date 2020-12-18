@@ -1,0 +1,14 @@
+<tbody>
+    <% @busquedas.search_pokemon.each do |vehiculo| %>
+    
+      <tr>
+        <td><%= vehiculo.motor %></td>
+        <td><%= vehiculo.marca %></td>
+        <td><%= vehiculo.color %><td>
+        <td><%= link_to t('Show'), vehiculo %></td>
+        <td><%= link_to t('Edit'), edit_vehiculo_path(vehiculo) %></td>
+        <td><%= link_to t('Destroy'), vehiculo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

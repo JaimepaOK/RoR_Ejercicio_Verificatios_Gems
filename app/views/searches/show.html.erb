@@ -1,0 +1,29 @@
+<h1>Search Results</h1>
+<p><%= link_to "Back", new_search_path %></p>
+
+<% if @search.search_vehiculo.empty? %>
+    <p>no hay vehiculos.</p>
+<% else %>
+    <table>
+        <thead>
+            <tr>
+                <th>Marca</th>
+                <th>Color</th>
+                <th></th>
+                <th colspan="3"></th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <% @search.search_vehiculo.each do |vehiculo| %>
+            <tr>
+                <td><%= vehiculo.Marca %></td>
+                <td><%= vehiculo.Color %></td>
+                <td><%= link_to t('Show'), vehiculo %></td>
+                <td><%= link_to t('Edit'), edit_vehiculo_path(vehiculo) %></td>
+                <td><%= link_to t('Destroy'), vehiculo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            </tr>
+            <% end %>
+        </tbody>
+</table>
+<% end %>

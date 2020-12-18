@@ -1,0 +1,96 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# The following keys must be escaped otherwise they will not be retrieved by
+# the default I18n backend:
+#
+# true, false, on, off, yes, no
+#
+# Instead, surround them with single quotes.
+#
+# en:
+#   'true': 'foo'
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+es:
+  Hello: "Hola"
+  Show: "Mostrar"
+  Edit: "Editar"
+  Destroy: "Eliminar"
+  Back: "Atras"
+  New Vehiculo: "Nuevo Vehiculo" 
+  Are You Sure?: "Estas Seguro" 
+  Search: "Buscar"
+  Motor: "Motor "
+  Brand: "Marca "
+  Model: "Modelo "
+  N_of_p: "Numero de Pasajeros "
+  Y_of_p: "Año de Producción "
+  Foto: "Foto "
+  Cylinder: "Cilindraje "
+  Vehicule_s: "Vehiculos"
+  Color: "Color "
+  Vehicule: "Vehiculo"
+  Home: "Inicio"
+  About: "Acerca De"
+  Help: "Ayuda"
+  Bye: "Adios"
+  ListV: "Lista de Vehiculos"
+  User: "Usuario"
+  Log_out: "Cerrar Sesión"
+  Log_in: "iniciar sesión"
+  Sign_in: "Iniciar Sesión"
+  Sign_up: "Registrarse"
+  Welcomeindex: "Bienvenido a Index"
+  Gsearch: "Buscador de Google"
+  Findmein: "Encuentrame en"
+  Helpindex: "Index de Ayuda"
+  Byeindex: "Index Adios"
+  Aboutindex: "Index Acerca De"
+  Welcome: "¡Bienvenido!"
+  conf_acount_below: "Puedes confimar tu cuenta con el elace de abajo"
+  Mail_contac_being_change: "Estamos contactando contigo para notificarte que tu correo cambiara"
+  Mail_contac_hasbeen_change: "Estamos contactando contigo para notificarte que tu correo ha sido cambiado"
+  r_c_i: "Reenvio de instrucciones de confirmación"
+  Mail_contac_pass_change: "Estamos contactando contigo para notificarte que tu contraseña ha sido cambiada"
+  reques_link_below: "Alguien ha solicitado un enlace para cambiar su contraseña. Puede hacerlo a través del enlace a continuación."
+  pass_wont_change: "Su contraseña no cambiará hasta que acceda al enlace anterior y cree una nueva."
+  didnot_request: "Si no hizo solicitud de cambio ignore este mensaje"
+  acount_lock: "Si cuenta ha sido bloqueado por el exceso de intentos"
+  unlock_below: "Haga Click en el siguiente enlace para desbloquear su cuenta:"
+  new_password: "Contraseña nueva"
+  confirm_password: "Confirme la contraseña nueva"
+  change_password: "Cambiar mi contraseña"
+  send_reset: "Reenviar las instrucciones para cambiar la contraseña"
+  Current_waiting_conf: "Esperando la confirmación para:"
+  current_password: "Contraseña Actual"
+  update: "Actualizar"
+  cancel_my_a: "Cancela mi cuenta "
+  change_form: "Cambia tu contraseña"
+  forgo_pass_form: "¿Olvidaste tu contraseña?"
+  password: "Contraseña"
+  password_confirm: "Confirmar Contraseña"
+  remember_me: "Recuerdame"
+  didnot_recive_inst: "¿No has recivido las instrucciones de confirmación?"
+  didnot_recive_unlock: "¿No has recivido las instrucciones para desbloquear tu cuenta?"
+  sing_in_with: "Inicia sesión con: "
+  resent_unlock: "Reenviar instrucciones para desbloquear la cuenta"
+  confirm_acount: "Confirmar mi cuenta"
+  avanzed_sh: "Busqueda Avanzada"

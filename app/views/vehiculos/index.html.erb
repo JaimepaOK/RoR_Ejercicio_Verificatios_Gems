@@ -1,0 +1,58 @@
+<p id="notice"><%= notice %></p>
+
+
+<div style="display: inline-block; text-align: right; width: 100%">
+<%= form_tag vehiculos_path, :method => 'get' do %>
+    <%= text_field_tag :search, params[:search] %>
+    <%= submit_tag t("Search"), :name => nil %>
+<% end %>
+</div>
+
+<%= link_to t('avanzed_sh'), new_busqueda_path %>
+
+<h1><%= t('Vehicule_s') %></h1>
+
+<table>
+  <thead>
+    <tr>
+      <th><%= t('Motor') %></th>
+
+      <th><%= t('Brand') %></th>
+
+      <th><%= t('Model') %></th>
+
+      <th><%= t('N_of_p') %></th>
+
+      <th><%= t('Y_of_p') %></th>
+
+      <th><%= t('Foto') %></th>
+
+      <th><%= t('Cylinder') %></th>
+      
+      <th><%= t('Color') %></th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @vehiculos.each do |vehiculo| %>
+      <tr>
+        <td><%= vehiculo.motor %></td>
+        <td><%= vehiculo.marca %></td>
+        <td><%= vehiculo.modelo %></td>
+        <td><%= vehiculo.cantpasj %></td>
+        <td><%= vehiculo.anyofabric %></td>
+        <td><%= vehiculo.foto %></td>
+        <td><%= vehiculo.cilindraje %></td>
+        <td><%= vehiculo.color %><td>
+        <td><%= link_to t('Show'), vehiculo %></td>
+        <td><%= link_to t('Edit'), edit_vehiculo_path(vehiculo) %></td>
+        <td><%= link_to t('Destroy'), vehiculo, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to t('New Vehiculo'), new_vehiculo_path %>

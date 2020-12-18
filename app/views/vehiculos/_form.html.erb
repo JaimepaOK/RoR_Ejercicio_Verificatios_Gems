@@ -1,0 +1,58 @@
+<%= form_with(model: vehiculo, local: true) do |form| %>
+  <% if vehiculo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(vehiculo.errors.count, "error") %> </h2>
+
+      <ul>
+      <% vehiculo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :motor %>
+    <%= form.text_field :motor, id: :vehiculo_motor %>
+  </div>
+
+  <div class="field">
+    <%= form.label :marca %>
+    <%= form.text_field :marca, id: :vehiculo_marca %>
+  </div>
+
+  <div class="field">
+    <%= form.label :modelo %>
+    <%= form.text_field :modelo, id: :vehiculo_modelo %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cantpasj %>
+    <%= form.select :cantpasj, (1..6).to_a,id: :vehiculo_cantpasj %>
+  </div>
+
+  <div class="field">
+    <%= form.label :anyofabric %>
+    <!--<%= form.number_field :anyofabric, id: :vehiculo_anyofabric %>-->
+    <%= form.select :anyofabric, (2000..Time.now.year).to_a,id: :vehiculo_anyofabric %>
+  </div>
+
+  <div class="field">
+    <%= form.label :foto %>
+    <%= form.text_field :foto, id: :vehiculo_foto %>
+  </div>
+
+  <div class="field">
+    <%= form.label :cilindraje %>
+    <%= form.number_field :cilindraje, id: :vehiculo_cilindraje %>
+  </div>
+
+  <div class="field">
+    <%= form.label :color %>
+    <%= form.text_field :color, id: :vehiculo_color %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

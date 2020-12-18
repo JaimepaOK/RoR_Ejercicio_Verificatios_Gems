@@ -1,0 +1,5 @@
+<p><%= t('Hello') %> <%= @email %></p>
+
+<p><%= t('conf_acount_below')%></p>
+
+<p><%= link_to t('confirm_acount'), confirmation_url(@resource, confirmation_token: @token) %></p>
